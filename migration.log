@@ -1,0 +1,172 @@
+
+
+2026-06-19 13:12:02,545 | INFO | SQL Server connection closed
+2026-06-19 13:28:11,429 | INFO | ========== Migration started | system_id=593910320470fdd8832956b532f09acf8ae4afb5 ==========
+2026-06-19 13:28:11,429 | INFO | Connecting to SQL Server: DESKTOP-HCGIUSP:1433/ask_dataentrega
+2026-06-19 13:28:11,886 | INFO | Connecting to Supabase
+2026-06-19 13:28:12,899 | INFO | Fetching threshold for system_id=593910320470fdd8832956b532f09acf8ae4afb5
+2026-06-19 13:28:15,191 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/dts_ref_migration_interface_system_config?select=key_threshold_value&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:15,193 | INFO | Threshold value: 100000
+2026-06-19 13:28:15,194 | INFO | Fetching table registry from Supabase
+2026-06-19 13:28:16,144 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/dts_ref_migration_interface_table_registry?select=%2A&active_flag=eq.True&order=migration_order.asc "HTTP/2 200 OK"
+2026-06-19 13:28:16,157 | INFO | Found 18 tables in registry
+2026-06-19 13:28:16,157 | INFO | --- Starting table: migr_sql_to_ws_obj_object -> ws_obj_object ---
+2026-06-19 13:28:16,157 | INFO | ws_obj_object - Delete strategy: THRESHOLD
+2026-06-19 13:28:16,335 | INFO | ws_obj_object - Deleted 157 rows
+2026-06-19 13:28:16,336 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_obj_object
+2026-06-19 13:28:17,141 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_obj_object?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:17,158 | INFO | Fetched 157 rows from migr_sql_to_ws_obj_object
+2026-06-19 13:28:18,428 | INFO | ws_obj_object - Inserted rows 1-157 of 157
+2026-06-19 13:28:18,433 | INFO | ws_obj_object - Count validation PASSED (rows=157)
+2026-06-19 13:28:18,433 | INFO | --- Completed table: ws_obj_object ---
+2026-06-19 13:28:18,433 | INFO | --- Starting table: migr_sql_to_ws_stage_tab -> ws_stage_tab ---
+2026-06-19 13:28:18,433 | INFO | ws_stage_tab - Delete strategy: THRESHOLD
+2026-06-19 13:28:18,438 | INFO | ws_stage_tab - Deleted 0 rows
+2026-06-19 13:28:18,439 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_stage_tab
+2026-06-19 13:28:19,420 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_stage_tab?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:19,424 | INFO | Fetched 37 rows from migr_sql_to_ws_stage_tab
+2026-06-19 13:28:19,735 | INFO | ws_stage_tab - Inserted rows 1-37 of 37
+2026-06-19 13:28:19,738 | INFO | ws_stage_tab - Count validation PASSED (rows=37)
+2026-06-19 13:28:19,739 | INFO | --- Completed table: ws_stage_tab ---
+2026-06-19 13:28:19,739 | INFO | --- Starting table: migr_sql_to_ws_stage_col -> ws_stage_col ---
+2026-06-19 13:28:19,740 | INFO | ws_stage_col - Delete strategy: THRESHOLD
+2026-06-19 13:28:19,755 | INFO | ws_stage_col - Deleted 0 rows
+2026-06-19 13:28:19,755 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_stage_col
+2026-06-19 13:28:21,034 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_stage_col?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:21,073 | INFO | Fetched 493 rows from migr_sql_to_ws_stage_col
+2026-06-19 13:28:23,219 | INFO | ws_stage_col - Inserted rows 1-493 of 493
+2026-06-19 13:28:23,222 | INFO | ws_stage_col - Count validation PASSED (rows=493)
+2026-06-19 13:28:23,223 | INFO | --- Completed table: ws_stage_col ---
+2026-06-19 13:28:23,223 | INFO | --- Starting table: migr_sql_to_ws_ods_tab -> ws_ods_tab ---
+2026-06-19 13:28:23,223 | INFO | ws_ods_tab - Delete strategy: THRESHOLD
+2026-06-19 13:28:23,227 | INFO | ws_ods_tab - Deleted 0 rows
+2026-06-19 13:28:23,227 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_ods_tab
+2026-06-19 13:28:23,955 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_ods_tab?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:23,958 | INFO | Fetched 3 rows from migr_sql_to_ws_ods_tab
+2026-06-19 13:28:24,058 | INFO | ws_ods_tab - Inserted rows 1-3 of 3
+2026-06-19 13:28:24,062 | INFO | ws_ods_tab - Count validation PASSED (rows=3)
+2026-06-19 13:28:24,063 | INFO | --- Completed table: ws_ods_tab ---
+2026-06-19 13:28:24,063 | INFO | --- Starting table: migr_sql_to_ws_ods_col -> ws_ods_col ---
+2026-06-19 13:28:24,064 | INFO | ws_ods_col - Delete strategy: THRESHOLD
+2026-06-19 13:28:24,093 | INFO | ws_ods_col - Deleted 0 rows
+2026-06-19 13:28:24,094 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_ods_col
+2026-06-19 13:28:24,775 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_ods_col?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:24,779 | INFO | Fetched 47 rows from migr_sql_to_ws_ods_col
+2026-06-19 13:28:25,154 | INFO | ws_ods_col - Inserted rows 1-47 of 47
+2026-06-19 13:28:25,159 | INFO | ws_ods_col - Count validation PASSED (rows=47)
+2026-06-19 13:28:25,159 | INFO | --- Completed table: ws_ods_col ---
+2026-06-19 13:28:25,159 | INFO | --- Starting table: migr_sql_to_ws_normal_tab -> ws_normal_tab ---
+2026-06-19 13:28:25,160 | INFO | ws_normal_tab - Delete strategy: THRESHOLD
+2026-06-19 13:28:25,429 | INFO | ws_normal_tab - Deleted 0 rows
+2026-06-19 13:28:25,429 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_normal_tab
+2026-06-19 13:28:26,094 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_normal_tab?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:26,098 | INFO | Fetched 53 rows from migr_sql_to_ws_normal_tab
+2026-06-19 13:28:26,628 | INFO | ws_normal_tab - Inserted rows 1-53 of 53
+2026-06-19 13:28:26,633 | INFO | ws_normal_tab - Count validation PASSED (rows=53)
+2026-06-19 13:28:26,633 | INFO | --- Completed table: ws_normal_tab ---
+2026-06-19 13:28:26,634 | INFO | --- Starting table: migr_sql_to_ws_normal_col -> ws_normal_col ---
+2026-06-19 13:28:26,634 | INFO | ws_normal_col - Delete strategy: THRESHOLD
+2026-06-19 13:28:26,640 | INFO | ws_normal_col - Deleted 0 rows
+2026-06-19 13:28:26,641 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_normal_col
+2026-06-19 13:28:27,372 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_normal_col?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:27,419 | INFO | Fetched 488 rows from migr_sql_to_ws_normal_col
+2026-06-19 13:28:28,208 | INFO | ws_normal_col - Inserted rows 1-488 of 488
+2026-06-19 13:28:28,212 | INFO | ws_normal_col - Count validation PASSED (rows=488)
+2026-06-19 13:28:28,212 | INFO | --- Completed table: ws_normal_col ---
+2026-06-19 13:28:28,213 | INFO | --- Starting table: migr_sql_to_ws_dim_tab -> ws_dim_tab ---
+2026-06-19 13:28:28,213 | INFO | ws_dim_tab - Delete strategy: THRESHOLD
+2026-06-19 13:28:28,293 | INFO | ws_dim_tab - Deleted 0 rows
+2026-06-19 13:28:28,294 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_dim_tab
+2026-06-19 13:28:29,176 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_dim_tab?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:29,177 | INFO | Fetched 3 rows from migr_sql_to_ws_dim_tab
+2026-06-19 13:28:29,328 | INFO | ws_dim_tab - Inserted rows 1-3 of 3
+2026-06-19 13:28:29,333 | WARNING | ws_dim_tab - Count validation WARNING: Source=3, Target=6. Some rows may not have loaded correctly.
+2026-06-19 13:28:29,333 | INFO | --- Completed table: ws_dim_tab ---
+2026-06-19 13:28:29,333 | INFO | --- Starting table: migr_sql_to_ws_dim_col -> ws_dim_col ---
+2026-06-19 13:28:29,334 | INFO | ws_dim_col - Delete strategy: THRESHOLD
+2026-06-19 13:28:29,453 | INFO | ws_dim_col - Deleted 0 rows
+2026-06-19 13:28:29,454 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_dim_col
+2026-06-19 13:28:30,391 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_dim_col?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:30,395 | INFO | Fetched 43 rows from migr_sql_to_ws_dim_col
+2026-06-19 13:28:30,677 | INFO | ws_dim_col - Inserted rows 1-43 of 43
+2026-06-19 13:28:30,681 | WARNING | ws_dim_col - Count validation WARNING: Source=43, Target=101. Some rows may not have loaded correctly.
+2026-06-19 13:28:30,682 | INFO | --- Completed table: ws_dim_col ---
+2026-06-19 13:28:30,682 | INFO | --- Starting table: migr_sql_to_ws_fact_tab -> ws_fact_tab ---
+2026-06-19 13:28:30,682 | INFO | ws_fact_tab - Delete strategy: THRESHOLD
+2026-06-19 13:28:30,719 | INFO | ws_fact_tab - Deleted 0 rows
+2026-06-19 13:28:30,719 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_fact_tab
+2026-06-19 13:28:31,629 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_fact_tab?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:31,631 | INFO | Fetched 0 rows from migr_sql_to_ws_fact_tab
+2026-06-19 13:28:31,631 | INFO | migr_sql_to_ws_fact_tab has no rows for system_id=593910320470fdd8832956b532f09acf8ae4afb5. Skipping load.
+2026-06-19 13:28:31,631 | INFO | --- Starting table: migr_sql_to_ws_fact_col -> ws_fact_col ---
+2026-06-19 13:28:31,631 | INFO | ws_fact_col - Delete strategy: THRESHOLD
+2026-06-19 13:28:31,833 | INFO | ws_fact_col - Deleted 0 rows
+2026-06-19 13:28:31,834 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_fact_col
+2026-06-19 13:28:32,493 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_fact_col?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:32,495 | INFO | Fetched 0 rows from migr_sql_to_ws_fact_col
+2026-06-19 13:28:32,495 | INFO | migr_sql_to_ws_fact_col has no rows for system_id=593910320470fdd8832956b532f09acf8ae4afb5. Skipping load.
+2026-06-19 13:28:32,496 | INFO | --- Starting table: migr_sql_to_ws_agg_tab -> ws_agg_tab ---
+2026-06-19 13:28:32,496 | INFO | ws_agg_tab - Delete strategy: THRESHOLD
+2026-06-19 13:28:32,576 | INFO | ws_agg_tab - Deleted 2 rows
+2026-06-19 13:28:32,576 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_agg_tab
+2026-06-19 13:28:33,230 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_agg_tab?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:33,232 | INFO | Fetched 2 rows from migr_sql_to_ws_agg_tab
+2026-06-19 13:28:33,361 | INFO | ws_agg_tab - Inserted rows 1-2 of 2
+2026-06-19 13:28:33,366 | INFO | ws_agg_tab - Count validation PASSED (rows=2)
+2026-06-19 13:28:33,366 | INFO | --- Completed table: ws_agg_tab ---
+2026-06-19 13:28:33,367 | INFO | --- Starting table: migr_sql_to_ws_agg_col -> ws_agg_col ---
+2026-06-19 13:28:33,367 | INFO | ws_agg_col - Delete strategy: THRESHOLD
+2026-06-19 13:28:33,663 | INFO | ws_agg_col - Deleted 0 rows
+2026-06-19 13:28:33,663 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_agg_col
+2026-06-19 13:28:34,332 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_agg_col?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:34,336 | INFO | Fetched 8 rows from migr_sql_to_ws_agg_col
+2026-06-19 13:28:34,484 | INFO | ws_agg_col - Inserted rows 1-8 of 8
+2026-06-19 13:28:34,488 | INFO | ws_agg_col - Count validation PASSED (rows=8)
+2026-06-19 13:28:34,488 | INFO | --- Completed table: ws_agg_col ---
+2026-06-19 13:28:34,489 | INFO | --- Starting table: migr_sql_to_ws_column_relationship -> ws_column_relationship ---
+2026-06-19 13:28:34,489 | INFO | ws_column_relationship - Delete strategy: FULL_DELETE
+2026-06-19 13:28:34,499 | INFO | ws_column_relationship - Deleted 202 rows
+2026-06-19 13:28:34,499 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_column_relationship
+2026-06-19 13:28:35,232 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_column_relationship?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:35,237 | INFO | Fetched 202 rows from migr_sql_to_ws_column_relationship
+2026-06-19 13:28:35,339 | INFO | ws_column_relationship - Inserted rows 1-202 of 202
+2026-06-19 13:28:35,345 | INFO | ws_column_relationship - Count validation PASSED (rows=202)
+2026-06-19 13:28:35,346 | INFO | --- Completed table: ws_column_relationship ---
+2026-06-19 13:28:35,348 | INFO | --- Starting table: migr_sql_to_ws_table_attributes -> ws_table_attributes ---
+2026-06-19 13:28:35,349 | INFO | ws_table_attributes - Delete strategy: THRESHOLD
+2026-06-19 13:28:35,354 | INFO | ws_table_attributes - Deleted 0 rows
+2026-06-19 13:28:35,355 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_table_attributes
+2026-06-19 13:28:36,083 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_table_attributes?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:36,103 | INFO | Fetched 459 rows from migr_sql_to_ws_table_attributes
+2026-06-19 13:28:36,416 | INFO | ws_table_attributes - Inserted rows 1-459 of 459
+2026-06-19 13:28:36,421 | WARNING | ws_table_attributes - Count validation WARNING: Source=459, Target=512. Some rows may not have loaded correctly.
+2026-06-19 13:28:36,421 | INFO | --- Completed table: ws_table_attributes ---
+2026-06-19 13:28:36,421 | INFO | --- Starting table: migr_sql_to_ws_source_mapping_tab -> ws_source_mapping_tab ---
+2026-06-19 13:28:36,422 | INFO | ws_source_mapping_tab - Delete strategy: THRESHOLD
+2026-06-19 13:28:36,472 | INFO | ws_source_mapping_tab - Deleted 0 rows
+2026-06-19 13:28:36,472 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_source_mapping_tab
+2026-06-19 13:28:37,181 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_source_mapping_tab?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:37,186 | INFO | Fetched 33 rows from migr_sql_to_ws_source_mapping_tab
+2026-06-19 13:28:37,363 | INFO | ws_source_mapping_tab - Inserted rows 1-33 of 33
+2026-06-19 13:28:37,367 | INFO | ws_source_mapping_tab - Count validation PASSED (rows=33)
+2026-06-19 13:28:37,367 | INFO | --- Completed table: ws_source_mapping_tab ---
+2026-06-19 13:28:37,368 | INFO | --- Starting table: migr_sql_to_ws_source_mapping_col -> ws_source_mapping_col ---
+2026-06-19 13:28:37,368 | INFO | ws_source_mapping_col - Delete strategy: THRESHOLD
+2026-06-19 13:28:37,371 | INFO | ws_source_mapping_col - Deleted 0 rows
+2026-06-19 13:28:37,372 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_source_mapping_col
+2026-06-19 13:28:38,106 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_source_mapping_col?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:38,120 | INFO | Fetched 238 rows from migr_sql_to_ws_source_mapping_col
+2026-06-19 13:28:38,596 | INFO | ws_source_mapping_col - Inserted rows 1-238 of 238
+2026-06-19 13:28:38,600 | INFO | ws_source_mapping_col - Count validation PASSED (rows=238)
+2026-06-19 13:28:38,601 | INFO | --- Completed table: ws_source_mapping_col ---
+2026-06-19 13:28:38,601 | INFO | --- Starting table: migr_sql_to_ws_source_mapping_att -> ws_source_mapping_att ---
+2026-06-19 13:28:38,601 | INFO | ws_source_mapping_att - Delete strategy: THRESHOLD
+2026-06-19 13:28:38,635 | INFO | ws_source_mapping_att - Deleted 33 rows
+2026-06-19 13:28:38,636 | INFO | Fetching source data: aide_datamart.migr_sql_to_ws_source_mapping_att
+2026-06-19 13:28:39,315 | INFO | HTTP Request: GET https://smvcwjoefalywezaftrw.supabase.co/rest/v1/migr_sql_to_ws_source_mapping_att?select=%2A&system_id=eq.593910320470fdd8832956b532f09acf8ae4afb5 "HTTP/2 200 OK"
+2026-06-19 13:28:39,317 | INFO | Fetched 33 rows from migr_sql_to_ws_source_mapping_att
+2026-06-19 13:28:39,500 | INFO | ws_source_mapping_att - Inserted rows 1-33 of 33
+2026-06-19 13:28:39,503 | INFO | ws_source_mapping_att - Count validation PASSED (rows=33)
+2026-06-19 13:28:39,504 | INFO | --- Completed table: ws_source_mapping_att ---
+2026-06-19 13:28:39,504 | INFO | ========== Migration completed | system_id=593910320470fdd8832956b532f09acf8ae4afb5 ==========
+2026-06-19 13:28:39,504 | INFO | SQL Server connection closed

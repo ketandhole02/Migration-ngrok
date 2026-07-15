@@ -1,0 +1,7 @@
+streamlit
+pandas
+pyodbc
+psycopg2-binary
+supabase
+python-dotenv
+requests
