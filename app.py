@@ -1,17 +1,5 @@
 import streamlit as st
 import os
-
-st.write("=== Environment Debug ===")
-st.write("os.getenv LOCAL_API_URL:", repr(os.getenv("LOCAL_API_URL")))
-st.write("os.getenv LOCAL_API_TOKEN:", repr(os.getenv("LOCAL_API_TOKEN")))
-
-st.write("Secrets keys:", list(st.secrets.keys()))
-
-st.write("st.secrets LOCAL_API_URL:",
-         st.secrets.get("LOCAL_API_URL"))
-
-st.write("st.secrets LOCAL_API_TOKEN exists:",
-         bool(st.secrets.get("LOCAL_API_TOKEN")))
 import traceback
 import os
 import streamlit as st
